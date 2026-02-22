@@ -20,7 +20,6 @@ public class Payment {
         this.paymentTime = LocalTime.now();
     }
 
-    // 2️⃣ Constructor for EXISTING payment (from DB)
     public Payment(int paymentId, Booking bookingId, double amount,
                    String method, PaymentStatus status, LocalTime paymentTime) {
         this.paymentId = paymentId;
@@ -79,4 +78,5 @@ public class Payment {
         this.paymentTime = paymentTime;
     }
 }
+
 
